@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel } from "./";
+import { Carousel, Questions } from "./";
 
 function HomePage() {
   return (
@@ -102,7 +102,9 @@ function HomePage() {
             </div>
           </div>
           {/* Preguntas */}
-          <div></div>
+          <div>
+            <Questions/>
+          </div>
         </div>
       </div>
     </div>
