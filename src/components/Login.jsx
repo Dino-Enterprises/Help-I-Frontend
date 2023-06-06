@@ -21,7 +21,7 @@ function Login() {
         <div className="mt-5">          
           <div className="flex justify-center">
             <button class="bg-green-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
-              Registrarse
+              LOG IN
             </button>
           </div>
         </div>

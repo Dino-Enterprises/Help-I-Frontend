@@ -52,9 +52,9 @@ function Register() {
               en correo.
             </label>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center -ml-8">
             <button class="bg-green-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
-              Regístrate
+              REGISTER
             </button>
           </div>
         </div>
