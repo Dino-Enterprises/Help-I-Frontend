@@ -3,7 +3,7 @@ import { Carousel, Questions } from "./";
 
 function HomePage() {
   return (
-    <div>
+    <div className="bg-[#161816] text-white">
       <div className="min-w-[1000px] max-w-[1500px] m-auto">
         <Carousel />
         <div>
@@ -41,24 +41,25 @@ function HomePage() {
             <div className="grid grid-cols-3 p-10 space-x-10">
               <div className="flex items-center justify-center  ">
                 <div className="items-center">
-                  <div className="text-center">Dirección de correo</div>
-                  <input className="rounded outline outline-1" type="text" />
+                  <div className="text-center">Dirección de correo: </div>
+                  <input className="rounded outline outline-1 text-black" type="text" />
                 </div>
               </div>
               <div className="flex items-center justify-center ">
                 <div>
-                  <div className="text-center">Nombre de usuario</div>
-                  <input className="rounded outline outline-1" type="text" />
+                  <div className="text-center">Nombre de usuario: </div>
+                  <input className="rounded outline outline-1 text-black" type="text" />
                 </div>
               </div>
               <div className="flex justify-center items-center">
                 <div>
                   <div className="text-center">
-                    Contraseña (min. 8 caracteres)
+                    Contraseña (min. 8 caracteres):
                   </div>
                   <input
-                    className="rounded outline outline-1"
+                    className="rounded outline outline-1 text-black"
                     type="password"
+                    
                   />
                 </div>
               </div>
@@ -71,13 +72,13 @@ function HomePage() {
                     id="default-checkbox"
                     type="checkbox"
                     value=""
-                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    className="w-4 h-4 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                   />
                   <label
                     for="default-checkbox"
-                    className="ml-2 text-sm font-medium text-gray-900"
+                    className="ml-2 text-sm font-medium"
                   >
-                    Acepto los <span className="text-green-400">Téminos y Condiciones</span> y las <span className="text-green-400">Políticas de Privacidad</span>, soy mayor de 13 años.
+                    Acepto los <span className="text-green-500">Téminos y Condiciones</span> y las <span className="text-green-500">Políticas de Privacidad</span>, soy mayor de 13 años.
                   </label>
                   
                 </div>
@@ -90,7 +91,7 @@ function HomePage() {
                   />
                   <label
                     for="default-checkbox"
-                    className="ml-2 text-sm font-medium text-gray-900"
+                    className="ml-2 text-sm font-medium"
                   >
                     Me gustaría recibir promociones y noticias de las actualizaciones en correo.
                   </label>

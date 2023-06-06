@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 
 const Carousel = () => {
   return (
-    <div className="h-[400px] bg-[#0e0f0e]">
+    <div className="h-[400px] bg-[#161816]">
       <Swiper
         loop={true}
         slidesPerView={1}
