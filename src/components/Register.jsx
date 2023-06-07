@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Register() {
   return (
@@ -6,24 +7,35 @@ function Register() {
       <div className="h-[500px] w-[400px] flex flex-col items-center justify-center bg-[#323232] text-white">
         <div className="mb-3">REGISTRO</div>
         <div>
-        <div>
-          <div>Nombres y Apellidos</div>
-          <input className="rounded outline outline-1 text-black" type="text" />
+          <div>
+            <div>Nombres y Apellidos</div>
+            <input
+              className="rounded outline outline-1 text-black"
+              type="text"
+            />
+          </div>
+          <div>
+            <div>Id del Usuario</div>
+            <input
+              className="rounded outline outline-1 text-black"
+              type="text"
+            />
+          </div>
+          <div>
+            <div>Correo</div>
+            <input
+              className="rounded outline outline-1 text-black"
+              type="text"
+            />
+          </div>
+          <div>
+            <div>Contraseña</div>
+            <input
+              className="rounded outline outline-1 text-black"
+              type="password"
+            />
+          </div>
         </div>
-        <div>
-          <div>Id del Usuario</div>
-          <input className="rounded outline outline-1 text-black" type="text" />
-        </div>
-        <div>
-          <div>Correo</div>
-          <input className="rounded outline outline-1 text-black" type="text" />
-        </div>
-        <div>
-          <div>Contraseña</div>
-          <input className="rounded outline outline-1 text-black" type="password" />
-        </div>
-
-        </div>        
         <div className="ml-6 mt-5">
           <div className="flex justify-center items-center mb-3">
             <input
@@ -52,11 +64,13 @@ function Register() {
               en correo.
             </label>
           </div>
-          <div className="flex justify-center -ml-8">
-            <button class="bg-green-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
-              REGISTER
-            </button>
-          </div>
+          <Link to={"/login"}>
+            <div className="flex justify-center -ml-8">
+              <button class="bg-green-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
+                REGISTER
+              </button>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

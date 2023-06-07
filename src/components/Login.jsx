@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -6,28 +7,34 @@ function Login() {
       <div className="h-[300px] w-[400px] flex flex-col items-center justify-center bg-[#323232] text-white">
         <div className="mb-3">LOGEATE</div>
         <div>
-       
-        <div>
-          <div>Id del Usuario</div>
-          <input className="rounded outline outline-1 text-black" type="text" />
-        </div>
-        
-        <div>
-          <div>Contraseña</div>
-          <input className="rounded outline outline-1 text-black" type="password" />
-        </div>
+          <div>
+            <div>Id del Usuario</div>
+            <input
+              className="rounded outline outline-1 text-black"
+              type="text"
+            />
+          </div>
 
-        </div>        
-        <div className="mt-5">          
+          <div>
+            <div>Contraseña</div>
+            <input
+              className="rounded outline outline-1 text-black"
+              type="password"
+            />
+          </div>
+        </div>
+        <div className="mt-5">
           <div className="flex justify-center">
-            <button class="bg-green-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
-              LOG IN
-            </button>
+            <Link to={"/user"}>
+              <button class="bg-green-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
+                LOG IN
+              </button>
+            </Link>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Login
+export default Login;
