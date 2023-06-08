@@ -31,7 +31,9 @@ function UserPage() {
           {/* Bottom */}
           <div className="flex items-center justify-between pt-[75px] mt-[20px]">
             <div>
-              <img className="w-[250px]" src="../images/dota_prof.png" />
+              <Link to={"/user/gamepage"}>
+                <img className="w-[250px]" src="../images/dota_prof.png" />
+              </Link>
             </div>
             <div>
               <img className="w-[250px]" src="../images/apex_prof.png" />

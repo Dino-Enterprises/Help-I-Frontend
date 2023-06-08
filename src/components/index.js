@@ -6,3 +6,4 @@ export { default as Register } from "./Register";
 export { default as Login } from "./Login";
 export { default as UserPage } from "./UserPage";
 export { default as UserPanel } from "./UserPanel";
+export { default as GamePage } from "./GamePage";
