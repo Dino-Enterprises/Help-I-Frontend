@@ -3,7 +3,7 @@ import React from "react";
 function Questions() {
   return (
     <div>
-      <div className="text-black grid grid-cols-3 outline outline-1 outline-gray-400 bg-[#36f25a] mt-5">
+      <div className="grid grid-cols-3 outline outline-1 outline-gray-400 mt-5">
         <div className="flex flex-col justify-center space-y-3 col-span-2 pl-5 pr-5">
           <div className="text-[28px] font-bold">Coaching con Help-I</div>
           <div className="text-xl">
@@ -33,7 +33,7 @@ function Questions() {
           </div>
         </div>
       </div>
-      <div className="text-black grid grid-cols-3 outline outline-1 outline-gray-400  bg-[#36f25a]">
+      <div className="grid grid-cols-3 outline outline-1 outline-gray-400 ">
         <div  className="flex flex-col justify-center space-y-0 col-span-2 pl-5 pr-5">
           <div className="text-[28px] font-bold">¿Cómo funciona?</div>
           <div className="text-xl">
