@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Questions } from "./";
+import { Carousel, CarouselVids, Questions } from "./";
 
 function HomePage() {
   return (
@@ -37,70 +37,10 @@ function HomePage() {
           </div>
           {/* Registro */}
           <div >
-            {/* grid datos */}
-            <div className="grid grid-cols-3 p-10 space-x-10">
-              <div className="flex items-center justify-center  ">
-                <div className="items-center">
-                  <div className="text-center">Dirección de correo: </div>
-                  <input className="rounded outline outline-1 text-black" type="text" />
-                </div>
-              </div>
-              <div className="flex items-center justify-center ">
-                <div>
-                  <div className="text-center">Nombre de usuario: </div>
-                  <input className="rounded outline outline-1 text-black" type="text" />
-                </div>
-              </div>
-              <div className="flex justify-center items-center">
-                <div>
-                  <div className="text-center">
-                    Contraseña (min. 8 caracteres):
-                  </div>
-                  <input
-                    className="rounded outline outline-1 text-black"
-                    type="password"
-                    
-                  />
-                </div>
-              </div>
-            </div>
+            {/* Carrusel videos */}
+            <CarouselVids/>
             {/* términos */}
-            <div className="ml-10 mr-10">
-              <div>
-                <div className="flex justify-center items-center mb-3">
-                  <input
-                    id="default-checkbox"
-                    type="checkbox"
-                    value=""
-                    className="w-4 h-4 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                  />
-                  <label
-                    for="default-checkbox"
-                    className="ml-2 text-sm font-medium"
-                  >
-                    Acepto los <span className="text-green-500">Téminos y Condiciones</span> y las <span className="text-green-500">Políticas de Privacidad</span>, soy mayor de 13 años.
-                  </label>
-                  
-                </div>
-                <div className="flex justify-center items-center mb-4">
-                  <input
-                    id="default-checkbox"
-                    type="checkbox"
-                    value=""
-                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                  />
-                  <label
-                    for="default-checkbox"
-                    className="ml-2 text-sm font-medium"
-                  >
-                    Me gustaría recibir promociones y noticias de las actualizaciones en correo.
-                  </label>
-                </div>
-                <div className="flex justify-center">
-                  <button class="bg-green-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Registrarse</button>
-                </div>
-              </div>
-            </div>
+            
           </div>
           {/* Preguntas */}
           <div>

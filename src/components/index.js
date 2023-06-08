@@ -7,3 +7,6 @@ export { default as Login } from "./Login";
 export { default as UserPage } from "./UserPage";
 export { default as UserPanel } from "./UserPanel";
 export { default as GamePage } from "./GamePage";
+export { default as ChangePwd } from "./ChangePwd";
+export { default as CreditCard } from "./CreditCard";
+export { default as CarouselVids } from "./CarouselVids";

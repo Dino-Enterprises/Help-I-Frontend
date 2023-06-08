@@ -31,9 +31,12 @@ function UserPanel() {
           <div className="col-span-1 flex flex-col space-y-8 pt-8 pb-8">
             <div className="text-[35px]">Game Coins</div>
             <div className="text-[35px]">Correo Electrónico</div>
-            <div className="text-[35px]">Cambiar Contraseña</div>
-            <div className="text-[35px]">Vincular Discord</div>
-            <div className="text-[35px]">Vincular Tarjeta de crédito</div>
+            <Link to={"/user/changepwd"}>
+              <div className="text-[35px]">Cambiar Contraseña</div>
+            </Link>
+            <Link to={"/user/creditcard"}>
+              <div className="text-[35px]">Vincular Tarjeta de crédito</div>
+            </Link>
           </div>
           {/* valores */}
           <div className="col-span-2 flex flex-col space-y-8 pt-8 pb-8">
@@ -45,7 +48,9 @@ function UserPanel() {
         </div>
         <div>
           <div className="col-span-1 flex flex-col space-y-8 pt-8 pb-8">
-            <div className="text-[35px]">Cerrar Sesión</div>
+            <Link to={"/"}>
+              <div className="text-[35px]">Cerrar Sesión</div>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HomePage, NavBar, Register, Login, UserPage, UserPanel, GamePage } from "./components";
+import { HomePage, NavBar, Register, Login, UserPage, UserPanel, GamePage, ChangePwd, CreditCard } from "./components";
 
 
 function App() {
@@ -13,6 +13,8 @@ function App() {
         <Route path="/user" element={<UserPage />} />
         <Route path="/user/userpanel" element={<UserPanel />} />
         <Route path="/user/gamepage" element={<GamePage />} />
+        <Route path="/user/changepwd" element={<ChangePwd />} />
+        <Route path="/user/creditcard" element={<CreditCard />} />
       </Routes>
     </BrowserRouter>
   );
