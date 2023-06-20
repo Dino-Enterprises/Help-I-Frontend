@@ -1,8 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HomePage, NavBar, Register, Login, UserPage, UserPanel, GamePage, ChangePwd, CreditCard } from "./components";
 
+import { useSelector } from 'react-redux'
 
 function App() {
+  useSelector(state => state.user)
   return (
     <BrowserRouter>
       <NavBar />
